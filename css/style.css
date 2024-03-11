@@ -1,0 +1,431 @@
+/*GENERAL*/
+:root{
+    --indent-level: 0;
+    --field-negative-horizontal-margin: 0px;
+    --field-row-children-spacing: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Stratum 2', sans-serif;
+    background-color:white
+}
+
+.container{
+    max-width:1920px;
+    max-height:1080px;
+    width:100%;
+    margin: 2 auto;
+}
+
+/*HEADER*/
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0px 30px;
+    color: #1e202f;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+}
+
+.logo{
+    width: 90px;
+    min-width: 80px;
+    height: 60px;
+    min-height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .8;
+    margin: 10px 10px;
+}
+
+.logo>img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 10px;
+}
+
+/*NAV*/
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav>a{
+  color:black ;
+  margin-left:5rem;
+  padding: 1rem;
+}
+
+.Tienda{
+    padding: 10px 20px;
+    margin: 10px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3281ac;
+    transition-duration: .2s;
+}
+
+.Tienda>a{
+    font-family: "Stratum2",sans-serif;
+}
+
+.logosteam{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Tienda>a{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffffee;
+    font-family: "Stratum2",sans-serif;
+}
+
+.PlayerPlayer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1e202f;
+    font-weight: bold;
+}
+
+.PlayerCount{
+    opacity: .8;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.PlayerNumber{
+    opacity: .8;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.espaciovacio{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    color: #1e202f;
+    position: relative;
+}
+
+.contenidovacio{
+    position: absolute;
+    top: 64px;
+    right: 0;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgba(244,244,244,.2);
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    z-index: 10000;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .2s;
+    border: 2px solid rgba(255,255,255,.6);
+}
+
+.botonesextra{
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #1e202f;
+    position: relative;
+}
+
+.News{
+    font-size: 16px;
+    font-family: "Stratum2",sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: .8;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.FAQ{
+    font-size: 16px;
+    font-family: "Stratum2",sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: .8;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/*PRIMERA SECCIÓN*/
+
+.ReactRoot{
+    width: 100%;
+}
+
+.AppRoot{
+    width: 100%;
+    height: 100%;
+}
+
+.GradientBG{
+    width: 100%;
+    height: 930px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to left, #E48717 50%, #D9D9D9 50%);
+    
+}
+
+.FondoHeader{
+    width: 100%;
+    color: #fff;
+    background-color: #d1d2d9;
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/textures/linemap-20.png);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ImagenHeader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/header_bg.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Imagenheader>img{
+    height: 100%;
+}
+
+.Logo2 {
+    margin-top: 260px; 
+    z-index: 2;
+    height: 720px;
+    width: 900px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Logo2 > img {
+    height: 100%;
+}
+
+.ImagenHeader2 {
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-250px);
+    z-index: 1;
+    margin-left: 300px;
+
+}
+
+.LogosContainer {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+
+.ImagenHeader2txt {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1e202f;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.logoheader2 {
+    z-index: 5;
+    margin-bottom: 20px;
+    max-width: 650px;
+}
+
+/* Primera Seccion de la pagina */
+.PrimeraSeccion {
+    padding: 120px 0px;
+    position: absolute;
+    background: url("../img/fondoAzul.png");
+    z-index: 20;
+    top: 58em;
+    height: 38.25em;
+    width: 119em;
+    background-color: #283780;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contenido{
+    padding: 50px 60px;
+    background-color: #272a3b;
+    max-width: 950px;
+    width: 80%;
+}
+
+.Titulo{
+    font-size: 36px;
+    color: #ffffffee;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 0;
+    line-height: 110%;
+}
+
+.Parrafos{
+    font-size: 20px;
+    color: #ffffffea;
+    margin-top: 25px;
+    text-align: justify;
+    width: 100%;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+/* Segunda seccion de la pagina */
+
+.SegundaSeccion {
+    background: url(../img/fondoNaranja.png);
+    position: absolute;
+    width: 119em;
+    top: 96em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Contenido2{
+    margin: 120px auto;
+    width: 67.5em;
+    padding-bottom: 100px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff9b01;
+}
+
+.Titulo2{
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 105%;
+}
+
+.Subtitulo{
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: -3em;
+    margin-bottom: -1em;
+    text-align: center;
+    line-height: 105%;
+}
+
+.Parrafos2{
+    font-size: 22px;
+    text-align: justify;
+    max-width: 650px;
+}
+
+.video{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-property: transform,opacity,filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.videoTituloContainer{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+
+@media (max-width:1200px){
+.ImagenHeader{
+    display: none;
+}
+
+}
