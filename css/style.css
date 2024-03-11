@@ -320,7 +320,7 @@ body{
     z-index: 20;
     top: 58em;
     height: 38.25em;
-    width: 119em;
+    width: 100%;
     background-color: #283780;
     display: flex;
     flex-direction: column;
@@ -358,7 +358,7 @@ body{
 .SegundaSeccion {
     background: url(../img/fondoNaranja.png);
     position: absolute;
-    width: 119em;
+    width: 100%;
     top: 96em;
     display: flex;
     flex-direction: column;
@@ -413,13 +413,6 @@ body{
     transition-duration: .3s;
     cursor: pointer;
     user-select: none;
-}
-
-.videoTituloContainer{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    margin-left: 50px;
 }
 
 
